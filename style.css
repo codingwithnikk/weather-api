@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(120deg, #63e9f3 0%, #2d82f9 100%);
+}
+
+.card {
+    text-align: center;
+    border-radius: 5px;
+    padding: 5vmax;
+    height: fit-content;
+    border: 2px solid rgba(139, 69, 19, 0.325);
+}
+
+.input-area input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    background-color: transparent;
+    font-size: 1.1rem;
+    font-weight: 400;
+    width: 70%;
+    border-bottom: 1px solid #ffffff87;
+}
+
+input::placeholder {
+    color: #fff;
+    opacity: 0.7;
+}
+
+.search-btn {
+    border: none;
+    padding: 10px 20px;
+    color: rgb(92, 92, 92);
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.middle-area > * {
+    margin: 10px;
+}
+
+.middle-area p {
+    margin: 2px;
+    color: rgba(237, 235, 235, 0.766);
+}
+
+.middle-area h1 {
+    font-size: 2.7rem;
+}
+
+h3 {
+    text-transform: lowercase;
+}
+
+.middle-area .temp {
+    font-size: 3rem;
+}
+
+.middle-area  sup {
+    font-size: 2rem;
+}
+
+img {
+    height: 60px;
+    width: 60px;
+}
+
+.min-max-area {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.min-max-area .line {
+    border: 1px solid rgba(237, 235, 235, 0.332);
+}
+
+.message {
+    margin: 20px 10px;
+}
+
+@media (max-width: 720px) {
+    body {
+        font-size: 12px;
+    }
+    .container {
+        width: 100vw;
+        height: 100vh;
+    }
+    .card {
+        width: 78%;
+        border: none;
+        width: 100%;
+    }
+    input {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
